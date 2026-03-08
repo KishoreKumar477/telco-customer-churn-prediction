@@ -223,8 +223,9 @@ Web App           Streamlit
 
 
 Author
+```
 Kishore Kumar
 Machine Learning & Data Science Enthusiast
 sunday march 8 2026
-
+```
 
