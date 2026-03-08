@@ -1,7 +1,7 @@
 📊 Telco Customer Churn Prediction System
 
 An end-to-end Machine Learning system that predicts whether a telecom customer is likely to churn (leave the service).
-
+```
 This project demonstrates a complete ML lifecycle including:
 	•	Data preprocessing pipelines
 	•	Multiple machine learning models
@@ -9,7 +9,7 @@ This project demonstrates a complete ML lifecycle including:
 	•	Cross-validation model comparison
 	•	Model evaluation and visualization
 	•	Interactive Streamlit web application
-
+```
 🚀 Demo
 
 Web Application
@@ -180,21 +180,21 @@ This launches an interactive churn prediction dashboard.
 
 
 Feature Importance
-
+```
 Key factors affecting churn include:
 	•	Contract type
 	•	Monthly charges
 	•	Tenure
 	•	Internet service
 	•	Payment method
-
+```
 
 Dataset
 
 Dataset used:
 
 Telco Customer Churn Dataset
-
+```
 Features include:
 	•	Customer demographics
 	•	Account information
@@ -203,21 +203,22 @@ Features include:
 
 Target variable:
 Churn (Yes / No)
-
+```
+```
 Key Insights
 	•	Customers with month-to-month contracts churn more frequently
 	•	Higher monthly charges correlate with churn
 	•	Longer tenure reduces churn probability
-
+```
 Technologies Used
-
+```
 Category          Tools
 Programming       Python
 Data Processing   Pandas, NumPy
 Machine Learning  Scikit-Learn, XGBoost, LightGBM
 Visualization     Matplotlib
 Web App           Streamlit
-
+```
 
 
 
