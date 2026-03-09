@@ -21,7 +21,7 @@ def main():
                         help="Mode to run: train / evaluate / predict")
 
     parser.add_argument("--model", type=str, required=True,
-                        help="Model name (LogisticRegression, RandomForest, XGBoost, SVM, LightGBM)")
+                        help="Model name (LogisticRegression, RandomForest, XGBoost, SVM)")
 
     parser.add_argument("--input", type=str, required=False,
                         help="Input CSV path (required for predict mode)")
