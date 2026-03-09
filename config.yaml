@@ -1,0 +1,89 @@
+# config.yaml
+data:
+  path: "/Users/kishorekumar/Desktop/Telco Customer Churn/dataset.csv/Telco-Customer-Churn.csv"  # or "car data.csv" if that's your file
+  target: "Churn"
+
+columns:
+  binary:
+    - Partner
+    - Dependents
+    - PhoneService
+    - PaperlessBilling
+    - gender
+  categorical:
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaymentMethod
+    - TenureGroup
+  numeric:
+    - tenure
+    - MonthlyCharges
+    - TotalCharges
+    - AvgMonthlySpend
+    - ServiceCount
+    - ChargeTenureInteraction
+
+models:
+  LogisticRegression:
+    active: true
+    params:
+      C: [0.01, 0.1, 1, 10, 100]
+    fixed_params:
+      random_state: 42
+      max_iter: 1000
+      class_weight: balanced
+
+  RandomForest:
+    active: true
+    params:
+      n_estimators: [100, 200]
+      max_depth: [10, 20, null]
+      min_samples_split: [2, 5, 10]
+      min_samples_leaf: [1, 2, 4]
+    fixed_params:
+      random_state: 42
+
+  XGBoost:
+    active: true
+    params:
+      n_estimators: [100, 200]
+      max_depth: [3, 6, 9]
+      learning_rate: [0.01, 0.1, 0.2]
+      subsample: [0.8, 1.0]
+      colsample_bytree: [0.8, 1.0]
+    fixed_params:
+      random_state: 42
+      eval_metric: 'logloss'
+
+  SVM:
+    active: true
+    params:
+      C: [0.1, 1, 10, 100]
+      gamma: ['scale', 'auto', 0.01, 0.1, 1]
+      kernel: ['rbf']
+    fixed_params:
+      random_state: 42
+
+  LightGBM:
+    active: true
+    params:
+      n_estimators: [100, 200]
+      max_depth: [-1, 10, 20]
+      learning_rate: [0.01, 0.1, 0.2]
+      num_leaves: [31, 50, 100]
+      subsample: [0.8, 1.0]
+      colsample_bytree: [0.8, 1.0]
+    fixed_params:
+      random_state: 42
+      verbose: -1
+
+split:
+  test_size: 0.2
+  random_state: 42
