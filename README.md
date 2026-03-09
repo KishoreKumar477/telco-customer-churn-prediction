@@ -1,5 +1,12 @@
 📊 Telco Customer Churn Prediction System
 
+## 🎥 Demo
+
+<p align="center">
+  <img src="demo.gif" alt="App Demo" width="800">
+</p>
+
+
 An end-to-end Machine Learning system that predicts whether a telecom customer is likely to churn (leave the service).
 ```
 This project demonstrates a complete ML lifecycle including:
