@@ -1,4 +1,4 @@
-📊 Telco Customer Churn Prediction System
+## 📊 Telco Customer Churn Prediction System
 
 ## 🎥 Demo
 
@@ -17,16 +17,16 @@ This project demonstrates a complete ML lifecycle including:
 	•	Model evaluation and visualization
 	•	Interactive Streamlit web application
 ```
-🚀 Demo
 
-Web Application
+
+## Web Application
 ```
 streamlit run app.py
 ```
 
 
 
-Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The system follows a modular ML architecture.
 
@@ -58,7 +58,7 @@ Model Comparison
 Streamlit Web App
 ```
 
-Models Implemented
+## Models Implemented
 
 The following algorithms were trained and evaluated:
 
@@ -72,7 +72,7 @@ XGBoost                  Gradient boosting model
 
 Model selection was performed using 5-fold cross validation with F1 Score.
 ```
-📈 Model Evaluation Metrics
+## 📈 Model Evaluation Metrics
 
 Evaluation metrics include:
 	•	Accuracy
@@ -83,7 +83,7 @@ Evaluation metrics include:
 	•	Precision-Recall Curve
 	•	Confusion Matrix
 
-Model Comparison
+## Model Comparison
 
 All models are compared using cross-validation scores.
 
@@ -97,7 +97,7 @@ LogisticReg     ███████████
 SVM             ██████████
 
 
-📂 Project Structure
+## 📂 Project Structure
 ```
 Telco-Customer-Churn
 │
@@ -141,9 +141,9 @@ Telco-Customer-Churn
 ├── requirements.txt
 └── README.md
 ```
-Installation
+## Installation
 
-Clone the repository:
+## Clone the repository:
 ```
 git clone https://github.com/kishorekumar040707/telco-churn-prediction.git
 cd telco-churn-prediction
@@ -159,7 +159,7 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-🏋️ Training Models
+## 🏋️ Training Models
 ```
 python main.py --mode train --model LogisticRegression
 python main.py --mode train --model RandomForest
@@ -167,26 +167,26 @@ python main.py --mode train --model SVM
 python main.py --mode train --model XGBoost
 ```
 
- Evaluate Models
+## Evaluate Models
 ```
 python main.py evaluate --model LogisticRegression
 ```
 
  Predict Churn
 
-Run prediction:
+## Run prediction:
 ```
 python main.py --mode predict --model LogisticRegression --input data/test.csv
 ```
 
-Run Web Application
+## Run Web Application
 ```
 streamlit run app.py
 ```
 This launches an interactive churn prediction dashboard.
 
 
-Feature Importance
+## Feature Importance
 ```
 Key factors affecting churn include:
 	•	Contract type
@@ -196,7 +196,7 @@ Key factors affecting churn include:
 	•	Payment method
 ```
 
-Dataset
+## Dataset
 
 Dataset used:
 
@@ -217,7 +217,7 @@ Key Insights
 	•	Higher monthly charges correlate with churn
 	•	Longer tenure reduces churn probability
 ```
-Technologies Used
+## Technologies Used
 ```
 Category          Tools
 Programming       Python
@@ -229,7 +229,7 @@ Web App           Streamlit
 
 
 
-Author
+## Author
 ```
 Kishore Kumar
 Machine Learning & Data Science Enthusiast
