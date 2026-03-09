@@ -9,7 +9,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
-import lightgbm as lgb
 import warnings
 
 import matplotlib.pyplot as plt
@@ -28,8 +27,7 @@ MODEL_CLASSES = {
     'LogisticRegression': LogisticRegression,
     'RandomForest': RandomForestClassifier,
     'XGBoost': XGBClassifier,
-    'SVM': SVC,
-    'LightGBM': lgb.LGBMClassifier
+    'SVM': SVC
 }
 
 def train_model(model_name, config):
