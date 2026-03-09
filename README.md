@@ -7,7 +7,7 @@
 </p>
 
 
-An end-to-end Machine Learning system that predicts whether a telecom customer is likely to churn (leave the service).
+## An end-to-end Machine Learning system that predicts whether a telecom customer is likely to churn (leave the service).
 ```
 This project demonstrates a complete ML lifecycle including:
 	•	Data preprocessing pipelines
