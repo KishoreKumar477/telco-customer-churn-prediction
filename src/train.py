@@ -10,16 +10,17 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 import warnings
-
 import matplotlib.pyplot as plt
-
-# Add project root to path (if running directly)
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from src.data_loader import load_data
 from src.preprocessing import build_full_pipeline
 from src.config_loader import load_config
 from src.logger import get_logger
+from sklearn.pipeline import Pipeline
+
+
+# Add project root to path (if running directly)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 logger = get_logger(__name__)
 
@@ -77,7 +78,6 @@ def train_model(model_name, config):
     logger.info(f"Starting GridSearchCV for {model_name}...")
     scoring_metric = config.get("training", {}).get("scoring", "f1")
 
-    from sklearn.pipeline import Pipeline
 
     full_pipeline = Pipeline([
         ("preprocessing", preprocessing_pipeline),
